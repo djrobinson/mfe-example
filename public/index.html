@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+		<meta http-equiv="PRAGMA" content="NO-CACHE" />
+		<meta http-equiv="Expires" content="-1" />
+		<meta http-equiv="cache-control" content="no-store" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- <title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<script>
+			if (
+				'<%= htmlWebpackPlugin.options.environment %>' === 'production' &&
+				typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === 'object'
+			) {
+				__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function() {};
+			}
+		</script> -->
+		<script>
+			isProductionBuild = '<%= htmlWebpackPlugin.options.environment %>' === 'production';
+			isMFE = true;
+		</script>
+	</head>
+
+	<body>
+		<div id="react"></div>
+	</body>
+</html>

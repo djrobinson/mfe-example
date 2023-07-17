@@ -1,0 +1,1 @@
+import('./Standalone.jsx');

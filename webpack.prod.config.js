@@ -1,15 +1,12 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
-const { merge } = require('webpack-merge');
 
 const deps = require('./package.json').dependencies;
 
 const config = {
-	mode: 'development',
 	entry: './index.js',
-	devtool: 'source-map',
+	devtool: 'eval',
 	target: 'web',
 	stats: {
 		children: true

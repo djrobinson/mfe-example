@@ -86,5 +86,5 @@ const DannysComponent = () => (
 	</div>
 );
 
-export default DannysOldComponent;
-// export default DannysComponent;
+// export default DannysOldComponent;
+export default DannysComponent;
